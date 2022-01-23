@@ -5,8 +5,12 @@
 }
 
 h1 {
-    font-family: monospace;
-    color: darkslategrey;
+    font-family: Courier;
+    color: #330000;
+}
+
+h1:hover {
+    color: brown;
 }
 
 .content {
@@ -26,26 +30,30 @@ h1 {
     animation: lightning 6s linear infinite;
 }
 
+.content .general_image img {
+    border-radius: 8px;
+}
+
 @keyframes lightning {
     0% {
-        filter: brightness(30%);
+        opacity: 0;
     }
     25% {
-        filter: brightness(100%);
+        opacity: 0.25;
     }
     30% {
-        filter: brightness(50%);
+        opacity: 0.3;
     }
     50% {
-        filter: brightness(30%);
+        opacity: 0.5;
     }
     60% {
-        filter: brightness(100%);
+        opacity: 0.6;
     }
     80% {
-        filter: brightness(30%);
+        opacity: 0.8;
     }
     100% {
-        filter: brightness(200%);
+        opacity: 1;
     }
 }
